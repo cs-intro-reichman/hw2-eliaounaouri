@@ -20,7 +20,8 @@ public class Cheers {
                 }else{
                         concat_word = "an";
                 }
-                System.out.println( "Give me "+ concat_word + " " + letter +": " + letter +"!");
+                char upperCaseLetter = Character.toUpperCase(letter);
+                System.out.println( "Give me "+ concat_word + " " + upperCaseLetter +": " + upperCaseLetter +"!");
         }
              
             for(int i = 0; i<num; i++){
