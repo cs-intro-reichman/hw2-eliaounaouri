@@ -16,7 +16,7 @@ public class Cheers {
             for(int i = 0; i<word.length(); i++){
                 char letter = word.charAt(i);
                 if(condition_letters.indexOf(letter) == -1){
-                        concat_word = "a";
+                        concat_word = "a ";
                 }else{
                         concat_word = "an";
                 }
