@@ -23,7 +23,7 @@ public class Cheers {
                 char upperCaseLetter = Character.toUpperCase(letter);
                 System.out.println( "Give me "+ concat_word + " " + upperCaseLetter +": " + upperCaseLetter +"!");
         }
-             
+            System.out.println("What does that spell?");
             for(int i = 0; i<num; i++){
                 System.out.println(word.toUpperCase()+"!!!");
             }
