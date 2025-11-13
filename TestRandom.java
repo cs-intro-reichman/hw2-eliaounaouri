@@ -2,5 +2,28 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    // Replace this comment with your code
+		int num = Integer.parseInt(args[0]);
+		int count_over = 0;
+		int count_under = 0;
+		for(int i = 0; i<num; i++){
+			double rand = Math.random();
+			if(rand > 0.5){
+				count_over = count_over + 1;
+
+
+			}else{
+				count_under = count_under + 1;
+			}
+		}
+		double ratio = 0;
+		if(count_over != 0 && count_under !=0){
+			ratio = (double)count_over/count_under;
+		}
+		
+		System.out.println("> 0.5: " + count_over + " times");
+		System.out.println("<= 0.5: " + count_under + " times");
+		if(count_over != 0 && count_under !=0){
+			System.out.println("Ratio: " + ratio);
+		}
 	}
 }
