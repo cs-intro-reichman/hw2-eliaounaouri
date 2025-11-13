@@ -11,7 +11,7 @@ public class Cheers {
 	    // Replace this comment with your code
             String word = args[0];
             int num = Integer.parseInt(args[1]);
-            String condition_letters = "AEFHILMNORSX";
+            String condition_letters = "AEFHILMNORSXaefhilmnorsx";
             String concat_word = "";
             for(int i = 0; i<word.length(); i++){
                 char letter = word.charAt(i);
